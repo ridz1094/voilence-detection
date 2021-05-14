@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Voilence Detection</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+  <!-- <img src="https://media3.giphy.com/media/3ohs4zo1eiDFYJg41y/200w.webp?cid=ecf05e47maztoq7b61h3sf3ekiuctg5lw8bqnxuvdweg6ycg&rid=200w.webp&ct=g" alt="description of gif" />  -->
+   <center>
+    <img src="https://media3.giphy.com/media/3ohs4zo1eiDFYJg41y/200w.webp?cid=ecf05e47maztoq7b61h3sf3ekiuctg5lw8bqnxuvdweg6ycg&rid=200w.webp&ct=g" alt="description of gif" /> 
+    <img src="https://media2.giphy.com/media/YxWwFswn5w0SAHDoO9/200w.webp?cid=ecf05e478ro0xtd20nppsaux655z6wei1201s5zw9w3ejwry&rid=200w.webp&ct=g" alt="description of gif" />
+	<h1>Violence Detection in Video</h1>
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="url" placeholder="Video Url" required="required" />
+      <br>
+      <br>
+        <button type="submit" class="btn btn-primary btn-block btn-large"> Predict </button>
+    </form>
+  </center>
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
