@@ -1,4 +1,4 @@
-# CMPE-258 Project - Voilence Detection In Videos
+# CMPE-258 Project - Violence Detection In Videos using Deep Neural Networks
 
 ## Team Data Divers:
 Team Members:
