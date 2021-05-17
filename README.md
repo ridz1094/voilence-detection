@@ -16,7 +16,7 @@ Team Members:
 6. Please find Project Report [here](https://github.com/rridhi-jain/voilence-detection/blob/main/Documentation/CMPE258%20Project%20Report_DataDivers.pdf)
 
 
-To Run Flask Applicaiton
+To run Flask Application:
 1. cd FlaskApplication
 2. pip install requirements.txt
 3. python app.py
